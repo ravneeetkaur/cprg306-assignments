@@ -9,6 +9,8 @@ export default function Home() {
         <Link href="/week-2" className="text-pink-500 hover:underline"> Go to Week 2 Assignment</Link>
         <br /> 
         <Link href="/week-3" className="text-pink-500 hover:underline"> Go to Week 3 Assignment</Link>
+        <br /> 
+        <Link href="/week-4" className="text-pink-500 hover:underline">Go to Week 4 Assignment</Link>
       </p>
     </main>
 
