@@ -13,6 +13,8 @@ export default function Home() {
         <Link href="/week-4" className="text-pink-500 hover:underline">Go to Week 4 Assignment</Link>
         <br />
         <Link href="/week-5" className="text-pink-500 hover:underline">Go to Week 5 Assignment</Link>
+        <br /> 
+        <Link href="/week-6" className="text-pink-500 hover:underline">Go to Week 6 Assignment</Link>
 
       </p>
     </main>
