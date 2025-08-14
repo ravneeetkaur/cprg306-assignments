@@ -1,7 +1,12 @@
 "use client";
 
 import { useContext, createContext, useState, useEffect } from "react";
-import { signInWithPopup, signOut, onAuthStateChanged, GithubAuthProvider } from "firebase/auth";
+import {
+  signInWithPopup,
+  signOut,
+  onAuthStateChanged,
+  GithubAuthProvider,
+} from "firebase/auth";
 import { auth } from "./firebase";
 
 const AuthContext = createContext();
@@ -23,7 +28,7 @@ export const AuthContextProvider = ({ children }) => {
       setUser(currentUser);
     });
     return () => unsubscribe();
-  }, []);
+  }, [user]);
 
   return (
     <AuthContext.Provider value={{ user, gitHubSignIn, firebaseSignOut }}>
